@@ -66,7 +66,6 @@ def dfs(graph,start,visited,path):
     for neighbour in graph[start]:
         if not visited[neighbour]:
             dfs(graph, neighbour, visited, path)
-    
     return path
 graph=defaultdict(list)
 n,e=map(int,input().split())
@@ -80,7 +79,6 @@ start='A'
 visited=defaultdict(bool)
 #type ur code here
 path=[]
-
 traversedpath=dfs(graph,start,visited,path)
 print(traversedpath)
 ```
